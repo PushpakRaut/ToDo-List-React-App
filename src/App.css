@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  word-spacing: 1px;
+  letter-spacing: 3px;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-section{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(to right, #34065d, #6e1e5d);
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+}
+.todoHeader{
+  color: #fff;
+  padding-top: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.container{
+  width:90%;
+  height: calc(100vh - 80px);
+  background-color: #4f2972;
+  border: 2px solid #660db4;
+  border-radius: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.header{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid;
+  margin-bottom: 10px;
+}
+h2{
+  color: #fff;
+  font-size: 1.5rem;
+}
+.add-btn{
+  background-color: #ff7179;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 7px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px white;
+  transition: all 0.3s;
+}
+button:hover{
+  background-color: #fd525b;
 }
 
-.App-link {
-  color: #61dafb;
+.tasks{
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 580px;
+}
+.remaining{
+  margin-right: 1rem;
+  width: 50%;
+}
+.completed{
+  margin-right: 1rem; 
+  width: 50%;
+}
+h4{
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding-left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.remain-container{
+  padding: 0 10px;
+  max-height: 540px;
+  height: auto;
+  overflow: auto;
+}
+
+.task-container{
+  width: 100%;
+  height: auto;
+  background-color: #7d6195;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  margin-bottom: 10px;
+
+}
+.taskTittle{
+  color: #fff;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  font-weight: 700;
+  word-break: break-all;
+}
+.input-tittle{
+  width: 100%;
+  padding: 15px 10px;
+  background-color: #490f7c;
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+}
+h1{
+  color: #fff;
+  padding-top: 0;
+  font-size: 2rem;
+  align-self: center;
+}
+.cancel-btn, .addTask-btn, .done-btn{
+  background-color: #ff7179;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.cancel-btn ,.done-btn{
+  padding: 10px 20px;
+  margin-left: 10px;
+}
+.cancel-btn{
+  background: none;
+  border: 1px solid #ff7179;
+}
+.date{
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+.icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon{
+  cursor: pointer;
+  margin-right: 0.3rem;
+}
+.checkIcon{
+  color: #44bd32;
+}
+.editIcon{
+  color: #fbc531;
+}
+.deleteIcon{
+  color: #e84118;
+}
+.inputBar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 6px 6rem;
+  margin-bottom: 10px;
+}
+form{
+  width: 80%;
 }
